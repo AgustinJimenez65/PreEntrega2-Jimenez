@@ -193,41 +193,19 @@ p{
 }
 
 /* ********************** CONTACTO ********************** */
-
-.contact-form {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding: 2rem;
-}
-
 .contact-form > * {
-    display: block;
-    width: 100%;
-    margin-bottom: 2rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    padding: .5rem;
-    border-radius: .25rem;
-    border: medium solid #9D4EDD;
+    border-radius: .7rem;
 }
-
 .contact-form input[type="submit"] {
-    margin-bottom: 0;
     width: 30%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #9D4EDD;
     font-size: 1.25rem;
     font-weight: bold;
     color: #fff;
 }
-
-.contact-form input[type="submit"]:hover{
-    cursor: pointer;
+.contact-form input[type="submit"]:hover {
     opacity: 75%;
 }
-
 .contact-form textarea {
     resize: none;
 }
