@@ -42,6 +42,10 @@ nav a{
     color: #9D4EDD;
 }
 
+nav ul {
+    margin-bottom: 0;
+}
+
 nav li {
     padding: .5rem;
 }
@@ -192,6 +196,24 @@ p{
     text-align: center;
 }
 
+.nosotros-container {
+    text-align: start;
+    margin-left: 1rem;
+}
+.nosotros-title {
+    display: flex;
+    align-items: center;
+}
+
+.nosotros-title img {
+    margin-right: 1rem;
+}
+
+.nosotros-caja {
+    max-width: 65rem;
+    margin-bottom: 2rem;
+}
+
 /* ********************** CONTACTO ********************** */
 .contact-form > * {
     border-radius: .7rem;
@@ -211,24 +233,6 @@ p{
 }
 
 /* ********************** PREGUNTAS FRECUENTES ********************** */
-
-.faqs-container {
-    text-align: start;
-    margin-left: 1rem;
-}
-.faqs-title {
-    display: flex;
-    align-items: center;
-}
-
-.faqs-title img {
-    margin-right: 1rem;
-}
-
-.faqs-caja {
-    max-width: 65rem;
-    margin-bottom: 2rem;
-}
 
 .faqs-img-pagos img {
     width: 6.25rem;
