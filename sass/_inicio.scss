@@ -1,0 +1,62 @@
+/* ********************** MAIN INICIO ********************** */
+
+.imagen-container {
+    img {
+        width: $img-width;
+        height: $img-height;
+    }
+}
+
+.card {
+    width: 12.5rem;
+    height: 25rem;
+    border: thin solid rgb(201, 200, 200);
+    text-align: center;
+    background-color: #fff;
+    transition: all 400ms ease;
+    border-radius: .5rem;
+    &:hover {
+        box-shadow: 1px 1px 5px 1px #0004;
+        transform: scale(1.02);
+    }
+    img {
+        width: $img-width;
+        height: 17.5rem;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+    .btn{
+        display: inline-block;
+        margin-top: .62rem;
+    }
+    a{
+        padding: .5rem 1.25rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        background-color: $color-violet;
+        border-radius: .25rem;
+        &:hover{
+            opacity: 75%;
+        }
+    }
+}
+
+/* boton de VER TODO */
+.btn-mas {
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        background-color: $color-violet;
+        border-radius: .3rem;
+        padding: .5rem 1.25rem;
+        &:hover {
+            opacity: 75%;
+        }
+    }
+}
+

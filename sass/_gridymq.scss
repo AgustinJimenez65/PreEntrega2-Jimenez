@@ -1,0 +1,96 @@
+/* **************************** GRIDS Y MQ ********************************* */
+
+/* declaro grids del header */
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+.envoltura {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* grid de las cards */
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+/* declaracion de MQ */
+
+@media(min-width:500px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+@media(min-width:768px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:1024px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .nosotros-img {
+        min-width: 31.8rem;
+    }
+}
+
+@media(min-width:1250px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .nosotros-text {
+        margin-left: 4rem;
+    }
+}
